@@ -1,0 +1,48 @@
+---
+const galleryImages = [
+  "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=300&fit=crop",
+  "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=300&h=300&fit=crop",
+  "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=300&h=300&fit=crop",
+  "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=300&h=300&fit=crop",
+  "https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=300&h=300&fit=crop",
+  "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=300&h=300&fit=crop",
+  "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=300&h=300&fit=crop",
+  "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=300&h=300&fit=crop",
+];
+---
+
+<section id="galeria" class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center space-y-4 mb-16">
+      <span
+        class="inline-block bg-rose-100 text-rose-800 px-4 py-2 rounded-full text-sm font-medium"
+      >
+        Galería
+      </span>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+        Nuestras Creaciones
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+        Cada imagen cuenta una historia de sabor, creatividad y momentos
+        especiales compartidos.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {
+        galleryImages.map((image, index) => (
+          <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img
+              src={image || "/placeholder.svg"}
+              alt={`Creación ${index + 1}`}
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <p class="text-white font-medium">Ver detalles</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

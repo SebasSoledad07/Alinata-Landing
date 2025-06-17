@@ -1,16 +1,113 @@
 ---
 import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Service from "../components/Service.astro";
+import Gallery from "../components/Gallery.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alinata Bakery - Repostería Artesanal</title>
+    <meta
+      name="description"
+      content="Alinata Bakery - Postres artesanales que endulzan tus celebraciones más especiales. Tortas personalizadas, cupcakes gourmet y más."
+    />
+    <link rel="icon" type="image/svg+xml" href="/alinata-blanco.jpg" />
+    <link rel="stylesheet" href="styles/global.css" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body
+    class="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-amber-50"
+  >
+    <!-- Header -->
+    <Header />
+
+    <!-- Hero Section -->
+    <Hero />
+
+    <!-- About Section -->
+    <About />
+
+    <!-- Services Section -->
+    <Service />
+
+    <!-- Gallery Section -->
+    <Gallery />
+
+    <!-- Testimonials Section -->
+    <Testimonials />
+
+    <!-- Contact Section -->
+    <Contact />
+
+    <!-- Footer -->
+    <Footer />
+
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const href = (e.currentTarget as HTMLAnchorElement).getAttribute(
+            "href"
+          );
+          if (!href) return;
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+      const contactForm = document.getElementById("contact-form");
+      if (contactForm) {
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form data
+          const form = this as HTMLFormElement;
+          const formData = new FormData(form);
+          const data = Object.fromEntries(formData);
+
+          // Here you would typically send the data to your backend
+          console.log("Form submitted:", data);
+
+          // Show success message
+          alert("¡Gracias por tu mensaje! Te contactaremos pronto.");
+
+          // Reset form
+          form.reset();
+        });
+      }
+
+      // Close mobile menu when clicking on links
+      document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          const mobileMenu = document.getElementById("mobile-menu");
+          if (mobileMenu) {
+            mobileMenu.classList.add("hidden");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
