@@ -6,7 +6,7 @@ anding page profesional y moderna desarrollada para la marca **Alinata Reposter�
 ## 🚀 Tecnologías Usadas
 - [Astro](https://astro.build/) — Framework principal
 - [TailwindCSS](https://tailwindcss.com/) — Utilizado para estilos modernos y responsivos
-- 
+
 ## 📸 Vista Previa
 
 ![Alinata Landing](./public/preview.jpg)
@@ -37,13 +37,16 @@ alinata-landing/
 ```bash
 git clone https://github.com/tuusuario/alinata-landing.git
 cd alinata-landing
+```
 
 ###  2. Instalar dependencias
+```bash
 npm install
-
+```
 3. Iniciar el servidor de desarrollo
 ```bash
 npm run dev
+```
 Luego abre tu navegador en http://localhost:4321
 ## 🧞 Commands
 
