@@ -1,12 +1,24 @@
+---
+import logo from "../assets/alinata-blanco.jpg";
+import { Image } from "astro:assets";
+---
+
 <header class="bg-white shadow-sm sticky top-0 z-50">
   <div class="container mx-auto px-4 py-4">
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <img
-          src="alinata-blanco.jpg"
-          alt="Alinata Bakery Logo"
-          class="h-12 w-auto object-contain"
+        <Image
+          src={logo}
+          alt="Logo de Alinata Bakery"
+          width={120}
+          height={120}
+          loading="eager"
+          class="w-20 h-auto"
         />
+
+        <a class="text-pink-800 font-medium text-2xl" href="#inicio"
+          >Alinata Bakery</a
+        >
       </div>
       <nav class="hidden md:flex space-x-8">
         <a

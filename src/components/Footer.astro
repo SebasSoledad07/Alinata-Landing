@@ -1,11 +1,16 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo-alinata.jpg";
+---
+
 <footer class="bg-gray-900 text-white py-12">
   <div class="container mx-auto px-4">
     <div class="text-center space-y-4">
       <div class="flex items-center justify-center space-x-3">
-        <img
-          src="/images/alinata-logo.jpg"
+        <Image
+          src={logo}
           alt="Alinata Bakery"
-          class="h-12 w-auto object-contain filter brightness-0 invert"
+          class="h-12 w-auto object-contain"
         />
       </div>
       <p class="text-gray-400 max-w-md mx-auto">

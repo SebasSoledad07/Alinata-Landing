@@ -5,6 +5,16 @@ export default {
   ],
   theme: {
     extend: {
+       animation: {
+        'float-slow': 'float 6s ease-in-out infinite',
+        
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translate(0, 0)' },
+          '50%': { transform: 'translate(10px, -10px)' },
+        },
+      },
       colors: {
               pink: {
                 50: "#fdf2f8",
