@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import Chocolate from "../assets/tortas/chocolate.jpg";
 import Chocolate2 from "../assets/tortas/chocolate2.jpg";
 import torta from "../assets/tortas/torta.jpg";
+import torta3 from "../assets/tortas/torta3.jpg";
 
 const galleryImages = [
   "../assets/tortas/chocolate.jpg",
@@ -66,13 +67,25 @@ const galleryImages = [
       <div class="relative group overflow-hidden rounded-lg aspect-square">
         <Image
           src={torta}
-          alt="Postre 2"
+          alt="Postre 3"
           class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
         />
         <div
           class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
         >
           <p class="text-white font-medium">Postre 3</p>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden rounded-lg aspect-square">
+        <Image
+          src={torta3}
+          alt="Postre 4"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+        >
+          <p class="text-white font-medium">Postre 4</p>
         </div>
       </div>
     </div>
