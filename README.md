@@ -1,34 +1,53 @@
-# Astro Starter Kit: Minimal
+# 🍰 Alinata Repostería - Landing Page
 
-```sh
-npm create astro@latest -- --template minimal
-```
+anding page profesional y moderna desarrollada para la marca **Alinata Repostería**, una empresa dedicada a la creación de postres personalizados y eventos especiales. Este sitio está diseñado para ser visualmente atractivo, responsivo y optimizado para conversión de clientes.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+---
+## 🚀 Tecnologías Usadas
+- [Astro](https://astro.build/) — Framework principal
+- [TailwindCSS](https://tailwindcss.com/) — Utilizado para estilos modernos y responsivos
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📸 Vista Previa
 
-## 🚀 Project Structure
+![Alinata Landing](./public/preview.jpg)
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📂 Estructura del Proyecto
 
-```text
-/
+alinata-landing/
 ├── public/
+│ └── logo alinata.jpg
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│ ├── components/
+│ ├── assets/
+│ ├── pages/
+│ └── styles/
+├── tailwind.config.js
+├── package-lock.json
+├── package.json
+├── package-lock.json
+├── astro.config.mjs
+└── README.md
+
+---
+
+## ⚙️ Cómo ejecutar el proyecto localmente
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/tuusuario/alinata-landing.git
+cd alinata-landing
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
+###  2. Instalar dependencias
+```bash
+npm install
+```
+3. Iniciar el servidor de desarrollo
+```bash
+npm run dev
+```
+Luego abre tu navegador en http://localhost:4321
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
