@@ -1,6 +1,6 @@
 # 🍰 Alinata Repostería - Landing Page
 
-anding page profesional y moderna desarrollada para la marca **Alinata Repostería**, una empresa dedicada a la creación de postres personalizados y eventos especiales. Este sitio está diseñado para ser visualmente atractivo, responsivo y optimizado para conversión de clientes.
+Landing page profesional y moderna desarrollada para la marca **Alinata Repostería**, una empresa dedicada a la creación de postres personalizados y eventos especiales. Este sitio está diseñado para ser visualmente atractivo, responsivo y optimizado para conversión de clientes.
 
 ---
 ## 🚀 Tecnologías Usadas
