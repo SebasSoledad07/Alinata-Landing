@@ -1,0 +1,400 @@
+---
+import { Image } from "astro:assets";
+
+// Cumpleaños
+import Cumpleanos   from "../assets/tortas/cumpleaños.jpeg";
+import Cumpleanos2  from "../assets/tortas/cumpleaños2.jpeg";
+import Cumpleanos3  from "../assets/tortas/cumpleaños3.jpeg";
+import Cumpleanos4  from "../assets/tortas/cumpleaños4.jpg";
+import Cumpleanos5  from "../assets/tortas/cumpleaños5.jpeg";
+import Cumpleanos6  from "../assets/tortas/cumpleaños6.jpeg";
+import Cumpleanos7  from "../assets/tortas/cumpleaños7.jpeg";
+import Cumpleanos8  from "../assets/tortas/cumpleaños8.jpeg";
+import Cumpleanos9  from "../assets/tortas/cumpleaños9.jpeg";
+import Cumpleanos10 from "../assets/tortas/cumpleaños10.jpeg";
+import Cumpleanos11 from "../assets/tortas/cumpleaños11.jpeg";
+
+// Chocolate
+import Chocolate  from "../assets/tortas/chocolate.jpg";
+import Chocolate2 from "../assets/tortas/chocolate2.jpg";
+import Chocolate3 from "../assets/tortas/chocolate3.jpeg";
+import Chocolate4 from "../assets/tortas/chocolate4.jpeg";
+
+// Red Velvet
+import RedVelvet  from "../assets/tortas/redvelvet.jpg";
+import RedVelvet2 from "../assets/tortas/redvelvet2.jpeg";
+
+// 3 Leches / Beso de Ángel
+import TresLeches1 from "../assets/tortas/tres-leches (1).jpeg";
+import TresLeches2 from "../assets/tortas/tres-leches (2).jpeg";
+import TresLeches3 from "../assets/tortas/tresleches3.jpeg";
+import BesoAngel   from "../assets/tortas/besoangel.jpeg";
+import BesoAngel2  from "../assets/tortas/besoangel2.jpeg";
+
+// Zanahoria
+import Zanahoria  from "../assets/tortas/zanahoria.jpeg";
+import Zanahoria2 from "../assets/tortas/zanahoria2.jpeg";
+import Zanahoria3 from "../assets/tortas/zanahoria3.jpeg";
+
+// Maíz
+import Maiz  from "../assets/tortas/maiz.jpeg";
+import Maiz2 from "../assets/tortas/maiz2.jpeg";
+
+// Arroz con Leche
+import ArrozConLeche  from "../assets/tortas/arrozconleche.jpeg";
+import ArrozConLeche2 from "../assets/tortas/arrozconleche2.jpeg";
+import ArrozConLeche3 from "../assets/tortas/arrozconleche3.jpeg";
+
+// Marquesa
+import Marquesa       from "../assets/tortas/marquesa.jpeg";
+import MarquesaPirulin from "../assets/tortas/marquesapirulin.jpeg";
+
+// Mini Cake
+import MiniCake  from "../assets/tortas/minicake.jpeg";
+import MiniCake2 from "../assets/tortas/minicake2.jpeg";
+import MiniCake3 from "../assets/tortas/minicake3.jpeg";
+
+// Cuchaeable Oreo
+import CuchareableOreo  from "../assets/tortas/cuchareableoreo.jpeg";
+import CuchareableOreo2 from "../assets/tortas/cuchareableoreo2.jpeg";
+
+// Torta Negra
+import Negra  from "../assets/tortas/negra.jpeg";
+import Negra2 from "../assets/tortas/negra2.jpeg";
+
+// Slice Cake / Bizcocho / Brownie
+import SliceCake from "../assets/tortas/slicecake.jpeg";
+import Biscocho  from "../assets/tortas/biscocho.jpeg";
+import Brownie   from "../assets/tortas/brownie.jpeg";
+
+const cakes = [
+  // ── Cumpleaños ──────────────────────────────────────────────
+  { img: Cumpleanos,   title: "Torta de Cumpleaños", desc: "Celebra tu día con una torta hecha con mucho amor.",                tag: "Cumpleaños" },
+  { img: Cumpleanos2,  title: "Torta de Cumpleaños", desc: "Diseños únicos y coloridos para una celebración inolvidable.",     tag: "Cumpleaños" },
+  { img: Cumpleanos3,  title: "Torta de Cumpleaños", desc: "Una torta especial a medida para el cumpleañero más importante.",  tag: "Cumpleaños" },
+  { img: Cumpleanos4,  title: "Torta de Cumpleaños", desc: "Con los mejores ingredientes para un momento memorable.",          tag: "Cumpleaños" },
+  { img: Cumpleanos5,  title: "Torta de Cumpleaños", desc: "Elegante y deliciosa para sorprender en su día especial.",         tag: "Cumpleaños" },
+  { img: Cumpleanos6,  title: "Torta de Cumpleaños", desc: "Cada detalle pensado con amor para tu celebración.",               tag: "Cumpleaños" },
+  { img: Cumpleanos7,  title: "Torta de Cumpleaños", desc: "Personalizada al gusto, irresistible al paladar.",                 tag: "Cumpleaños" },
+  { img: Cumpleanos8,  title: "Torta de Cumpleaños", desc: "Diseño artesanal que hace brillar tu fiesta.",                     tag: "Cumpleaños" },
+  { img: Cumpleanos9,  title: "Torta de Cumpleaños", desc: "Para los momentos que se quedan en el corazón.",                   tag: "Cumpleaños" },
+  { img: Cumpleanos10, title: "Torta de Cumpleaños", desc: "Sabor y decoración que superan expectativas.",                     tag: "Cumpleaños" },
+  { img: Cumpleanos11, title: "Torta de Cumpleaños", desc: "Hecha con pasión para que sea el centro de tu fiesta.",            tag: "Cumpleaños" },
+
+  // ── Chocolate ───────────────────────────────────────────────
+  { img: Chocolate,  title: "Torta de Chocolate", desc: "Intenso, húmedo y con ganache de chocolate belga.",                   tag: "Chocolate" },
+  { img: Chocolate2, title: "Torta de Chocolate", desc: "Bizcocho esponjoso bañado en crema de cacao artesanal.",              tag: "Chocolate" },
+  { img: Chocolate3, title: "Torta de Chocolate", desc: "Triple capa de chocolate para los amantes del cacao puro.",           tag: "Chocolate" },
+  { img: Chocolate4, title: "Torta de Chocolate", desc: "Cobertura sedosa sobre un bizcocho de cacao perfectamente húmedo.",   tag: "Chocolate" },
+
+  // ── Red Velvet ──────────────────────────────────────────────
+  { img: RedVelvet,  title: "Red Velvet", desc: "Suave bizcocho rojo con frosting de queso crema irresistible.",               tag: "Red Velvet" },
+  { img: RedVelvet2, title: "Red Velvet", desc: "Una obra de arte en rojo y blanco, perfecta para cualquier ocasión.",         tag: "Red Velvet" },
+
+  // ── 3 Leches ────────────────────────────────────────────────
+  { img: TresLeches1, title: "Torta 3 Leches", desc: "Empapada en tres leches con crema suave por encima.",                   tag: "3 Leches" },
+  { img: TresLeches2, title: "Torta 3 Leches", desc: "La favorita de muchos: esponjosa, cremosa y llena de sabor.",           tag: "3 Leches" },
+  { img: TresLeches3, title: "Torta 3 Leches", desc: "Un clásico irresistible que siempre enamora en cada reunión.",          tag: "3 Leches" },
+
+  // ── Beso de Ángel ───────────────────────────────────────────
+  { img: BesoAngel,  title: "Beso de Ángel", desc: "Quesillo sobre tres leches en una combinación celestial.",                 tag: "Beso de Ángel" },
+  { img: BesoAngel2, title: "Beso de Ángel", desc: "Cremoso, suave y con ese toque dulce que te hace cerrar los ojos.",       tag: "Beso de Ángel" },
+
+  // ── Zanahoria ───────────────────────────────────────────────
+  { img: Zanahoria,  title: "Torta de Zanahoria", desc: "Esponjosa y aromática con frosting de queso crema.",                 tag: "Zanahoria" },
+  { img: Zanahoria2, title: "Torta de Zanahoria", desc: "La zanahoria le da humedad natural y un sabor único.",               tag: "Zanahoria" },
+  { img: Zanahoria3, title: "Torta de Zanahoria", desc: "Clásica receta de zanahoria con un toque especial de canela.",       tag: "Zanahoria" },
+
+  // ── Maíz ────────────────────────────────────────────────────
+  { img: Maiz,  title: "Torta de Maíz", desc: "Esponjosa y aromática, preparada con maíz tierno y toque dulce.",              tag: "Maíz" },
+  { img: Maiz2, title: "Torta de Maíz", desc: "Suave y casera, con ese sabor que recuerda a la abuela.",                     tag: "Maíz" },
+
+  // ── Arroz con Leche ─────────────────────────────────────────
+  { img: ArrozConLeche,  title: "Arroz con Leche", desc: "El postre clásico venezolano reconfortante y cremoso.",              tag: "Arroz con Leche" },
+  { img: ArrozConLeche2, title: "Arroz con Leche", desc: "Preparado con leche entera, canela y amor en cada cucharada.",      tag: "Arroz con Leche" },
+  { img: ArrozConLeche3, title: "Arroz con Leche", desc: "Cremoso y aromático, perfecto para endulzar cualquier momento.",    tag: "Arroz con Leche" },
+
+  // ── Marquesa ────────────────────────────────────────────────
+  { img: Marquesa,        title: "Marquesa",          desc: "El clásico postre de galleta y parchita en capas irresistibles.", tag: "Especial" },
+  { img: MarquesaPirulin, title: "Marquesa Pirulín",  desc: "La querida marquesa con toque de pirulín y mucho sabor.",         tag: "Especial" },
+
+  // ── Mini Cake ───────────────────────────────────────────────
+  { img: MiniCake,  title: "Mini Cake", desc: "Pequeña pero poderosa, perfecta como regalo o postre individual.",              tag: "Mini Cake" },
+  { img: MiniCake2, title: "Mini Cake", desc: "Delicada decoración en tamaño compacto para ocasiones especiales.",            tag: "Mini Cake" },
+  { img: MiniCake3, title: "Mini Cake", desc: "Todo el sabor de una torta grande en un formato adorable.",                    tag: "Mini Cake" },
+
+  // ── Cuchaeable Oreo ─────────────────────────────────────────
+  { img: CuchareableOreo,  title: "Cuchaeable Oreo", desc: "Postre en vaso con capas de Oreo y crema que se come a cucharadas.", tag: "Especial" },
+  { img: CuchareableOreo2, title: "Cuchaeable Oreo", desc: "Cremoso, crujiente y absolutamente adictivo en cada capa.",          tag: "Especial" },
+
+  // ── Torta Negra ─────────────────────────────────────────────
+  { img: Negra,  title: "Torta Negra", desc: "Clásica torta negra con frutos secos y especias aromáticas.",                   tag: "Especial" },
+  { img: Negra2, title: "Torta Negra", desc: "Intensa y fragante, una tradición de sabor que perdura.",                       tag: "Especial" },
+
+  // ── Slice / Bizcocho / Brownie ──────────────────────────────
+  { img: SliceCake, title: "Slice Cake",  desc: "Porción individual de torta, perfecta para regalar o disfrutar solo.",       tag: "Especial" },
+  { img: Biscocho,  title: "Bizcocho",    desc: "Suave, esponjoso y con ese aroma de horno que enamora.",                    tag: "Especial" },
+  { img: Brownie,   title: "Brownie",     desc: "Denso, fudgy y con ese centro perfectamente húmedo que enamora.",            tag: "Especial" },
+];
+
+// Build unique ordered category list
+const categories = ["Todo", ...new Set(cakes.map(c => c.tag))];
+---
+
+<section id="creaciones" class="py-24 bg-gradient-to-br from-rose-50 via-pink-50 to-amber-50">
+  <div class="container mx-auto px-4">
+
+    <!-- Header -->
+    <div class="text-center space-y-4 mb-12">
+      <span class="inline-block bg-rose-100 text-rose-700 px-5 py-2 rounded-full text-sm font-semibold tracking-wide uppercase">
+        Nuestras Creaciones
+      </span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+        Tortas que Cuentan Historias
+      </h2>
+      <p class="text-lg text-gray-500 max-w-2xl mx-auto">
+        Cada torta es única, elaborada con amor y los mejores ingredientes para hacer tus momentos inolvidables.
+      </p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div
+      class="flex flex-wrap justify-center gap-2 mb-10"
+      id="filter-tabs"
+      role="tablist"
+      aria-label="Filtrar por categoría"
+    >
+      {categories.map((cat, i) => (
+        <button
+          class={`filter-btn px-4 py-2 rounded-full text-sm font-semibold border transition-all duration-200
+            focus:outline-none focus:ring-2 focus:ring-rose-400 focus:ring-offset-2
+            ${i === 0
+              ? "bg-rose-500 text-white border-rose-500 shadow-md"
+              : "bg-white text-gray-600 border-gray-200 hover:border-rose-400 hover:text-rose-600"
+            }`}
+          data-category={cat}
+          role="tab"
+          aria-selected={i === 0 ? "true" : "false"}
+        >
+          {cat}
+        </button>
+      ))}
+    </div>
+
+    <!-- Grid -->
+    <div
+      id="cakes-grid"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+    >
+      {cakes.map((cake, i) => (
+        <article
+          class="cake-card group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+          data-tag={cake.tag}
+          data-index={i}
+          data-title={cake.title}
+          data-desc={cake.desc}
+        >
+          <!-- Image -->
+          <div class="relative overflow-hidden h-56">
+            <Image
+              src={cake.img}
+              alt={cake.title}
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <!-- Category badge -->
+            <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-rose-600 text-xs font-bold px-3 py-1 rounded-full shadow">
+              {cake.tag}
+            </span>
+            <!-- Hover overlay -->
+            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg transform scale-75 group-hover:scale-100 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0zm-6-3v6m-3-3h6" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card body -->
+          <div class="p-5 space-y-2">
+            <h3 class="font-bold text-gray-900 group-hover:text-rose-600 transition-colors duration-200">
+              {cake.title}
+            </h3>
+            <p class="text-sm text-gray-500 leading-relaxed line-clamp-2">{cake.desc}</p>
+            <a
+              href="#contacto"
+              class="inline-flex items-center gap-1 text-sm font-semibold text-rose-500 hover:text-rose-700 transition-colors pt-1"
+              onclick="event.stopPropagation()"
+            >
+              Pedir ahora
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <!-- Empty state -->
+    <div id="empty-state" class="hidden text-center py-20 text-gray-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-3 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <p class="text-lg font-medium">No hay creaciones en esta categoría aún.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div
+  id="lightbox"
+  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Imagen ampliada"
+>
+  <button
+    id="lightbox-close"
+    class="absolute top-4 right-4 w-10 h-10 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center transition-colors"
+    aria-label="Cerrar"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+
+  <button
+    id="lightbox-prev"
+    class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/10 hover:bg-white/25 text-white rounded-full flex items-center justify-center transition-colors"
+    aria-label="Anterior"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  <button
+    id="lightbox-next"
+    class="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/10 hover:bg-white/25 text-white rounded-full flex items-center justify-center transition-colors"
+    aria-label="Siguiente"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+
+  <div class="max-w-3xl w-full mx-auto flex flex-col items-center gap-4">
+    <img id="lightbox-img" src="" alt="" class="max-h-[70vh] rounded-2xl object-contain shadow-2xl w-full" />
+    <div class="text-center text-white">
+      <p id="lightbox-title" class="text-xl font-bold"></p>
+      <p id="lightbox-desc" class="text-sm text-white/70 mt-1 max-w-md mx-auto"></p>
+    </div>
+  </div>
+</div>
+
+<style>
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .cake-card[data-hidden] { display: none; }
+  #lightbox.open { display: flex; }
+</style>
+
+<script>
+  (function () {
+    const tabs     = document.querySelectorAll<HTMLButtonElement>(".filter-btn");
+    const cards    = document.querySelectorAll<HTMLElement>(".cake-card");
+    const empty    = document.getElementById("empty-state")   as HTMLElement;
+    const lightbox = document.getElementById("lightbox")      as HTMLElement;
+    const lbImg    = document.getElementById("lightbox-img")  as HTMLImageElement;
+    const lbTitle  = document.getElementById("lightbox-title") as HTMLElement;
+    const lbDesc   = document.getElementById("lightbox-desc")  as HTMLElement;
+    const lbClose  = document.getElementById("lightbox-close") as HTMLButtonElement;
+    const lbPrev   = document.getElementById("lightbox-prev")  as HTMLButtonElement;
+    const lbNext   = document.getElementById("lightbox-next")  as HTMLButtonElement;
+
+    let visibleIndices: number[] = [];
+    let lbCurrent = 0;
+
+    /* ── FILTER ─────────────────────────────────────── */
+    function applyFilter(cat: string) {
+      visibleIndices = [];
+      let delay = 0;
+
+      cards.forEach((card, i) => {
+        const show = cat === "Todo" || card.dataset.tag === cat;
+        if (show) {
+          card.removeAttribute("data-hidden");
+          card.style.animationDelay = `${delay * 55}ms`;
+          card.style.animation = "none";
+          void (card as HTMLElement).offsetWidth; // force reflow
+          card.style.animation = "fadeInUp 0.35s ease both";
+          visibleIndices.push(i);
+          delay++;
+        } else {
+          card.setAttribute("data-hidden", "");
+        }
+      });
+
+      empty.classList.toggle("hidden", visibleIndices.length > 0);
+
+      tabs.forEach(tab => {
+        const active = tab.dataset.category === cat;
+        tab.classList.toggle("bg-rose-500",    active);
+        tab.classList.toggle("text-white",     active);
+        tab.classList.toggle("border-rose-500", active);
+        tab.classList.toggle("shadow-md",      active);
+        tab.classList.toggle("bg-white",       !active);
+        tab.classList.toggle("text-gray-600",  !active);
+        tab.classList.toggle("border-gray-200", !active);
+        tab.setAttribute("aria-selected", active ? "true" : "false");
+      });
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => applyFilter(tab.dataset.category ?? "Todo"));
+    });
+
+    /* ── LIGHTBOX ────────────────────────────────────── */
+    function openLightbox(cardIndex: number) {
+      const pos = visibleIndices.indexOf(cardIndex);
+      lbCurrent = pos >= 0 ? pos : 0;
+      renderLb();
+      lightbox.classList.add("open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    function renderLb() {
+      lbCurrent = (lbCurrent + visibleIndices.length) % visibleIndices.length;
+      const card = cards[visibleIndices[lbCurrent]];
+      const img  = card.querySelector("img");
+      lbImg.src            = img?.src ?? "";
+      lbImg.alt            = card.dataset.title ?? "";
+      lbTitle.textContent  = card.dataset.title ?? "";
+      lbDesc.textContent   = card.dataset.desc  ?? "";
+    }
+
+    cards.forEach((card, i) => card.addEventListener("click", () => openLightbox(i)));
+    lbClose.addEventListener("click", closeLightbox);
+    lbPrev.addEventListener("click",  () => { lbCurrent--; renderLb(); });
+    lbNext.addEventListener("click",  () => { lbCurrent++; renderLb(); });
+    lightbox.addEventListener("click", e => { if (e.target === lightbox) closeLightbox(); });
+
+    document.addEventListener("keydown", e => {
+      if (!lightbox.classList.contains("open")) return;
+      if (e.key === "Escape")      closeLightbox();
+      if (e.key === "ArrowLeft")  { lbCurrent--; renderLb(); }
+      if (e.key === "ArrowRight") { lbCurrent++; renderLb(); }
+    });
+
+    applyFilter("Todo");
+  })();
+</script>
