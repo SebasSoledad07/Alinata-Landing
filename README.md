@@ -1,9 +1,11 @@
 # 🍰 Alinata Repostería - Landing Page
 
-anding page profesional y moderna desarrollada para la marca **Alinata Repostería**, una empresa dedicada a la creación de postres personalizados y eventos especiales. Este sitio está diseñado para ser visualmente atractivo, responsivo y optimizado para conversión de clientes.
+Landing page profesional y moderna desarrollada para la marca **Alinata Repostería**, una empresa dedicada a la creación de postres personalizados y eventos especiales. Este sitio está diseñado para ser visualmente atractivo, responsivo y optimizado para conversión de clientes.
 
 ---
+
 ## 🚀 Tecnologías Usadas
+
 - [Astro](https://astro.build/) — Framework principal
 - [TailwindCSS](https://tailwindcss.com/) — Utilizado para estilos modernos y responsivos
 
@@ -28,8 +30,6 @@ alinata-landing/
 ├── astro.config.mjs
 └── README.md
 
----
-
 ## ⚙️ Cómo ejecutar el proyecto localmente
 
 ### 1. Clonar el repositorio
@@ -39,15 +39,20 @@ git clone https://github.com/tuusuario/alinata-landing.git
 cd alinata-landing
 ```
 
-###  2. Instalar dependencias
+### 2. Instalar dependencias
+
 ```bash
 npm install
 ```
+
 3. Iniciar el servidor de desarrollo
+
 ```bash
 npm run dev
 ```
+
 Luego abre tu navegador en http://localhost:4321
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
