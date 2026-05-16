@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquear directorios de sistema de Astro
+Disallow: /_astro/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://alinatakbery.netlify.app/sitemap.xml
